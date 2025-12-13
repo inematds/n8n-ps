@@ -1,0 +1,27 @@
+# Environment files
+.env
+.env.local
+*.env
+
+# API Keys (never commit these!)
+**/api-keys.txt
+**/credentials.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Node modules (if any examples added)
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
