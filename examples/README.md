@@ -1,85 +1,85 @@
-# Example Workflows
+# Exemplos de Workflows
 
-These are example workflows you can ask Claude to build. Just describe what you need and Claude will use the skills and MCP to create them.
-
----
-
-## Example Prompts
-
-### Webhook Processing
-
-```
-Build a webhook that receives form submissions, validates the email,
-stores in a database, and sends a Slack notification.
-```
-
-### API Integration
-
-```
-Create a workflow that fetches data from a REST API every hour,
-transforms the response, and updates a Google Sheet.
-```
-
-### Database Sync
-
-```
-Sync new customers from Shopify to my Postgres database daily.
-Handle duplicates by checking email.
-```
-
-### AI Agent
-
-```
-Build a chatbot that can search our documentation and answer questions.
-Use OpenAI for the AI and webhook for receiving messages.
-```
-
-### Scheduled Report
-
-```
-Every day at 9 AM, fetch yesterday's sales from Shopify,
-calculate total revenue and order count, and post a summary to Slack.
-```
+Estes são exemplos de workflows que você pode pedir ao Claude para construir. Basta descrever o que você precisa e Claude usará as skills e MCP para criá-los.
 
 ---
 
-## Pro Tips
+## Prompts de Exemplo
 
-### Start with Architecture
+### Processamento de Webhook
 
-Before building, ask Claude:
 ```
-Should I use n8n or Python for [your use case]?
-```
-
-Claude will use the `n8n-workflow-architect` skill to analyze your requirements.
-
-### Get Pattern Guidance
-
-Ask for pattern recommendations:
-```
-What's the best pattern for processing Stripe webhooks?
+Construa um webhook que receba envios de formulário, valide o email,
+armazene em um banco de dados e envie uma notificação no Slack.
 ```
 
-Claude will reference `n8n-workflow-patterns` for proven approaches.
+### Integração de API
 
-### Validate Before Deploy
-
-Always ask Claude to validate:
 ```
-Validate the workflow you just created.
+Crie um workflow que busque dados de uma API REST a cada hora,
+transforme a resposta e atualize uma planilha do Google Sheets.
 ```
 
-Claude will use MCP validation tools to check for issues.
+### Sincronização de Banco de Dados
+
+```
+Sincronize novos clientes do Shopify para meu banco Postgres diariamente.
+Trate duplicatas verificando o email.
+```
+
+### Agente de IA
+
+```
+Construa um chatbot que pode pesquisar nossa documentação e responder perguntas.
+Use OpenAI para a IA e webhook para receber mensagens.
+```
+
+### Relatório Agendado
+
+```
+Todos os dias às 9h, busque as vendas de ontem do Shopify,
+calcule a receita total e contagem de pedidos, e poste um resumo no Slack.
+```
 
 ---
 
-## Workflow Files
+## Dicas Pro
 
-If you want to import workflows manually, you can export them from Claude:
+### Comece com a Arquitetura
+
+Antes de construir, pergunte ao Claude:
+```
+Devo usar n8n ou Python para [seu caso de uso]?
+```
+
+Claude usará a skill `n8n-workflow-architect` para analisar seus requisitos.
+
+### Obtenha Orientação de Padrões
+
+Peça recomendações de padrões:
+```
+Qual o melhor padrão para processar webhooks do Stripe?
+```
+
+Claude consultará `n8n-workflow-patterns` para abordagens comprovadas.
+
+### Valide Antes de Implantar
+
+Sempre peça ao Claude para validar:
+```
+Valide o workflow que você acabou de criar.
+```
+
+Claude usará as ferramentas de validação MCP para verificar problemas.
+
+---
+
+## Arquivos de Workflow
+
+Se você quiser importar workflows manualmente, pode exportá-los do Claude:
 
 ```
-Export the workflow as JSON so I can import it manually.
+Exporte o workflow como JSON para que eu possa importar manualmente.
 ```
 
-Claude will provide the workflow JSON that you can import via n8n UI.
+Claude fornecerá o JSON do workflow que você pode importar pela UI do n8n.
